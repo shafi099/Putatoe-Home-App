@@ -1,7 +1,27 @@
-import React from 'react'
-import {FaPlusSquare} from "react-icons/fa";
+import React , { useState }from 'react'
+import {FaPlusSquare,FaMinusSquare} from "react-icons/fa";
+import bricks from '../pics/bricks.jpg'
+import cementpic1 from '../pics/cementpic.jpg'
+import wire from '../pics/wire.jpg'
+import cementpic2 from '../pics/cementpic2.jpg'
+import landpic1 from '../pics/landpic1.jpeg'
+import landpic2 from '../pics/landpic2.jpg'
+// const images=[bricks, cementpic1, cementpic2, wire, landpic1]
 
 const ItemCard = (props) => {
+    const [add, setAdd]=useState(false)
+    const CartHandle = () =>{
+        setAdd(true)
+        let index
+        if(props.pic===bricks){ index=0 }
+        else if(props.pic===cementpic1){ index=1 }
+        else if(props.pic===cementpic2){ index=2 }
+        else if(props.pic===wire){ index=3 }
+        else if(props.pic===landpic1){ index=4 }
+        else if(props.pic===landpic2){ index=5 }
+        props.CartPass([props.name,props.desc,props.price,props.off,props.option1,props.options2,index])
+    }
+
   return (
     <div className='ItemCardsPortion'>
             <span>
@@ -15,12 +35,19 @@ const ItemCard = (props) => {
             <span className='Instock'>
                 <span>
                     In Stock
-                    </span><FaPlusSquare size='30px' color='#498d95'/></span>
+                    </span>
+                    {add===false && (
+                        <FaPlusSquare size='30px' color='#498d95' onClick={CartHandle}/>
+                    )}
+                    {add===true && (
+                        <FaMinusSquare size='30px' color='#498d95' />
+                    )}
+                    </span>
             <span className='ItemCardSelect'>
                 <label for='select'>Qty: </label>
                 <select name="select" id="select" className='itemcardOptions'>
-                <option value="constant">{props.option1}</option>
-                <option value="constant">{props.Option2}</option>
+                <option value={props.option1}>{props.option1}</option>
+                <option value={props.options2}>{props.options2}</option>
                 </select>
             </span>
             </span>

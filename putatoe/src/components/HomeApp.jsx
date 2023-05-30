@@ -1,11 +1,9 @@
 import React from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
+import TopNav from './TopNav';
 import '../App.css';
-import {
-    FaMapMarkerAlt, FaBell, FaCartPlus, FaMicrophone,
-
-    FaMobileAlt, FaTv, FaMoneyBillAlt, FaBullhorn, FaRegNewspaper, FaBlog, FaPeopleArrows, FaWpforms, FaGripfire, FaRegLightbulb, FaHandHoldingWater, FaArrowCircleRight
-
-
+import { FaMobileAlt, FaTv, FaMoneyBillAlt, FaBullhorn, FaRegNewspaper, FaBlog,
+     FaPeopleArrows, FaWpforms, FaGripfire, FaRegLightbulb, FaHandHoldingWater, FaArrowCircleRight
 } from "react-icons/fa";
 import { FcShipped, FcOnlineSupport } from "react-icons/fc";
 import ReachargeCardPic from '../pics/RechargeCard.jpg'
@@ -17,29 +15,16 @@ import cementpic2 from '../pics/cementpic2.jpg'
 import landpic1 from '../pics/landpic1.jpeg'
 import ItemCard from './ItemCard';
 import ContactComp from './ContactComp';
-import logo from '../pics/logo.png'
-import { TiHome, TiUser, TiThList, } from "react-icons/ti";
-import { BsChatTextFill } from "react-icons/bs";
+import BottomBar from './BottomBar';
+import landpic2 from '../pics/landpic2.jpg'
 
 
-const HomeApp = () => {
+const HomeApp = (props) => {
+    
+
+
     return (<>
-        <div className='Topnav'>
-            <span className='locationPortion'>
-                <span className='location'>
-                    <span><FaMapMarkerAlt size='19px' color='white' /></span>
-                    <span>Hyderbad,Telangana</span>
-                </span>
-                <span className='NotificationCart'>
-                    <FaBell size='25px' color='white' />
-                    <FaCartPlus size='25px' color='white' />
-                </span>
-            </span>
-            <span className='locationPortion'>
-                <input type='text' placeholder='Search your Products...' />
-                <FaMicrophone size='25px' color='white' />
-            </span>
-        </div>
+       <TopNav length={props.length}/>
 
 
         <div className='rechargeCard'>
@@ -127,11 +112,12 @@ const HomeApp = () => {
             <span className='titleBlock'>Construction</span>
         </div>
         <div className='DisplayOptions'>
-            <ItemCard pic={bricks} name='Royal Bricks' desc='Brick' price='18000' option1='2000 Pieces' options2='1000 Pieces' off='20000' />
-            <ItemCard pic={landpic1} name='Dehri Bihar' desc='Morang' price='6272' option1='78 Square Feet' options2=' ' off='7500' />
-            <ItemCard pic={cementpic1} name='ACC  Gold' desc='Cement' price='485' option1='50 KG' options2='25 KG' off='550' />
-            <ItemCard pic={cementpic2} name='UltraTech PPC' desc='cement' price='450' option1='50 KG' options2='25 KG' off='550' />
-            <ItemCard pic={wire} name='Wire' desc='Cable' price='90' option1='Copper' options2='' off='110' />
+            <ItemCard pic={bricks} name='Royal Bricks' desc='Brick' price='18000' option1='2000 Pieces' options2='1000 Pieces' off='20000' CartPass={props.CartPass}/>
+            <ItemCard pic={landpic1} name='Dehri Bihar' desc='Morang' price='6272' option1='78 Square Feet' options2='52 Square Feet' off='7500'  CartPass={props.CartPass}/>
+            <ItemCard pic={cementpic1} name='ACC  Gold' desc='Cement' price='485' option1='50 KG' options2='25 KG' off='550'  CartPass={props.CartPass}/>
+            <ItemCard pic={cementpic2} name='UltraTech PPC' desc='cement' price='450' option1='50 KG' options2='25 KG' off='550'  CartPass={props.CartPass}/>
+            <ItemCard pic={wire} name='Wire' desc='Cable' price='90' option1='Copper' options2='Copper' off='110'  CartPass={props.CartPass}/>
+            <ItemCard pic={landpic2} name='Dehri Bihar' desc='Morang' price='7299' option1='90 Square Feet' options2='68 Square Feet' off='8265'  CartPass={props.CartPass}/>
         </div>
         <div className='HeaderPart'>
             <span>All Popular Service Providers</span>
@@ -155,25 +141,15 @@ const HomeApp = () => {
         </div>
         <div className='Service'>
             <div className='servicePortion'>
-                <span>
-                    <FcShipped size='100px' />
-                </span>
+                <span> <FcShipped size='100px' /> </span>
                 <span>Daily Needs</span>
             </div>
             <div className='servicePortion'>
-                <span>
-                    <FcOnlineSupport size='100px' />
-                </span>
+                <span><FcOnlineSupport size='100px' /></span>
                 <span>Consultancy</span>
             </div>
         </div>
-        <div className='bottomBar'>
-            <span><TiHome size='35px' color='#498d95' /></span>
-            <span><TiUser size='40px' color='#498d95' /></span>
-            <span><img src={logo} alt='logo' className='logo' /></span>
-            <span><TiThList size='30px' color='#498d95' /></span>
-            <span><BsChatTextFill size='30px' color='#498d95' /></span>
-        </div>
+        <BottomBar/>
 
     </>)
 }
