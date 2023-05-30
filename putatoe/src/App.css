@@ -1,0 +1,317 @@
+body {
+  background-color: #498d9523;
+  margin: 0px;
+}
+
+@media screen and (min-width: 640px) {
+  .Topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #498d95;
+    height: 50px;
+  }
+
+  .locationPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%
+  }
+
+  .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    /* border-radius:10px; */
+    padding: 5px 9px 5px 9px;
+
+  }
+
+  .location span {
+    /* font-size:20px; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Space Grotesk', sans-serif;
+
+  }
+
+  .NotificationCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 1% 0px 1%;
+    /* gap:6%; */
+  }
+
+  .Topnav input {
+    width: 20%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: rgb(36, 36, 36);
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .rechargeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    border-radius: 20px;
+    ;
+    border: 0ps solid transparent;
+  }
+
+  .rechargeCard img {
+    width: 50%;
+    height: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 0ps solid transparent;
+    box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+  }
+
+  .selectOptions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1% 30% 1% 30%;
+    /* width:50%; */
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+    border-radius: 20px;
+    ;
+
+    gap: 5%;
+  }
+
+  .selectOptions span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #498d95;
+    font-size: 14px;
+    margin-bottom: 5%;
+  }
+}
+
+
+@media screen and (max-device-width: 640px) {
+
+  .Topnav {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 6% 0% 6%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    background-color: #498d95;
+    height: 100%;
+  }
+
+  .locationPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* width:50% */
+    gap: 10px;
+    margin-bottom: 3%;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    /* gap:20px; */
+    padding: 3px 14px 3px 14px;
+
+  }
+
+  .location span {
+    margin: 0;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Space Grotesk', sans-serif;
+
+  }
+
+  .NotificationCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 1% 0px 1%;
+    gap: 10px;
+    /* gap:6%; */
+  }
+
+  .Topnav input {
+    width: 90%;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid white;
+    color: rgb(36, 36, 36);
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .rechargeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-radius: 20px;
+    ;
+    border: 0ps solid transparent;
+  }
+
+  .rechargeCard img {
+    width: 95%;
+    height: 40%;
+    border-radius: 20px;
+    ;
+    border: 0ps solid transparent;
+    box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+  }
+
+  .selectOptions {
+    margin-top: 2%;
+    background-color: white;
+    padding: 1%;
+    margin: 3%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1%;
+    box-shadow: 1px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+  }
+
+  .selectOptions span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #498d95;
+    font-size: 12px;
+    margin-bottom: 5%;
+
+  }
+
+  .Heading {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: white;
+    padding: 1.5% 5% 1.5% 5%;
+    border-radius: 10px;
+    margin: 0 3% 2% 3%;
+    box-shadow: 1px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+    /* justify-content: center; */
+    /* align-items:start; */
+    font-size: 16px;
+    color: #1f5a60;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+  }
+
+  .constructionBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1.5% 5% 1.5% 5%;
+    border-radius: 10px;
+    margin: 0 3% 2% 3%;
+    box-shadow: 1px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+  }
+
+  .titleBlock {
+    font-family: 'Poppins', sans-serif;
+    color: #1f5a60;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(92, 92, 92);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .coverblockportion{
+    margin-top: 2%;
+    padding:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:2px solid #498d95;
+    border-radius: 5px;
+  }
+  .coverblockportion img{
+    width:50px;
+    height:50px;
+  }
+  .name{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;;
+  }
+  .offertext{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;;
+    font-weight:600;
+  }
+  .offertextRed{
+    color:rgb(205, 2, 2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:600;
+  }
+}
