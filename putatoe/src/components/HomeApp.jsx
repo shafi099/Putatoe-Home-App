@@ -5,9 +5,18 @@ import {
 
     FaMobileAlt, FaTv, FaMoneyBillAlt, FaBullhorn, FaRegNewspaper, FaBlog, FaPeopleArrows, FaWpforms, FaGripfire, FaRegLightbulb, FaHandHoldingWater, FaArrowCircleRight
 
+    
 } from "react-icons/fa";
+import { FcShipped, FcOnlineSupport} from "react-icons/fc";
 import ReachargeCardPic from '../pics/RechargeCard.jpg'
 import coverblock from '../pics/coverblock.png'
+import bricks from '../pics/bricks.jpg'
+import cementpic1 from '../pics/cementpic.jpg'
+import wire from '../pics/wire.jpg'
+import cementpic2 from '../pics/cementpic2.jpg'
+import landpic1 from '../pics/landpic1.jpeg'
+import ItemCard from './ItemCard';
+import ContactComp from './ContactComp';
 
 const HomeApp = () => {
     return (<>
@@ -105,6 +114,54 @@ const HomeApp = () => {
                     <span className='offertextRed'> 10% OFF</span>
                     </span>
             </span>
+        </div>
+
+        <div className='HeaderPart'>
+            <span>Popular Service Products</span>
+        </div>
+        <div className='normalHead'>
+        <span className='titleBlock'>Construction</span>
+        </div>
+        <div className='DisplayOptions'>
+        <ItemCard pic={bricks} name='Royal Bricks' desc='Brick' price='18000' option1='2000 Pieces' options2='1000 Pieces' off='20000'/>
+        <ItemCard pic={landpic1} name='Dehri Bihar' desc='Morang' price='6272' option1='78 Square Feet' options2=' ' off='7500'/>
+        <ItemCard pic={cementpic1} name='ACC  Gold' desc='Cement' price='485' option1='50 KG' options2='25 KG' off='550'/>
+        <ItemCard pic={cementpic2} name='UltraTech PPC' desc='cement' price='450' option1='50 KG' options2='25 KG' off='550'/>
+        <ItemCard pic={wire} name='Wire' desc='Cable' price='90' option1='Copper' options2='' off='110'/>
+        </div>
+        <div className='HeaderPart'>
+            <span>All Popular Service Providers</span>
+        </div>
+        <div className='normalHead'>
+        <span className='titleBlock'>Construction</span>
+        </div>
+        <div className='DisplayOptions'>
+            <ContactComp letter='G' name='Gangotri Building' />
+            <ContactComp letter='P' name='Pulak Shops' />
+            <ContactComp letter='S' name='Singh Building' />
+            <ContactComp letter='S' name='Surpradha Interiors' />
+            <ContactComp letter='A' name='Apna Interiors' />
+            <ContactComp letter='V' name='Viveks & Associates' />
+            <ContactComp letter='G' name='Gangotri Building' />
+            <ContactComp letter='M' name='Mahavir Traders' />
+            <ContactComp letter='R' name='Ravi Traders' />
+        </div>
+        <div className='HeaderPart'>
+            <span>Service We Provide</span>
+        </div>
+        <div className='Service'>
+            <div className='servicePortion'>
+                <span>
+                   <FcShipped size='100px' /> 
+                </span>
+                <span>Daily Needs</span>
+            </div>
+            <div className='servicePortion'>
+                <span>
+                   <FcOnlineSupport size='100px' /> 
+                </span>
+                <span>Consultancy</span>
+            </div>
         </div>
     </>)
 }

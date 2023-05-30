@@ -72,7 +72,6 @@ body {
     align-items: center;
     margin-top: 1%;
     border-radius: 20px;
-    ;
     border: 0ps solid transparent;
   }
 
@@ -115,6 +114,263 @@ body {
     font-size: 14px;
     margin-bottom: 5%;
   }
+  
+  .Heading {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: white;
+    padding: 1.5% 5% 1.5% 5%;
+    border-radius: 10px;
+    margin: 0 20% 2% 20%;
+    box-shadow: 1px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+    /* justify-content: center; */
+    /* align-items:start; */
+    font-size: 16px;
+    color: #1f5a60;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+  }
+
+  .constructionBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1.5% 5% 1.5% 5%;
+    border-radius: 10px;
+    margin: 0 20% 2% 20%;
+    box-shadow: 1px 1px 3px rgb(135, 135, 135, 0.179),
+      -1px -1px 3px rgba(135, 135, 135, 0.179);
+  }
+
+  .titleBlock {
+    font-family: 'Poppins', sans-serif;
+    color: #1f5a60;
+    padding:0px 10% 0px 10%;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(92, 92, 92);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .coverblockportion{
+    margin-top: 2%;
+    padding:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:2px solid #498d95;
+    border-radius: 5px;
+  }
+  .coverblockportion img{
+    width:50px;
+    height:50px;
+  }
+  .name{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;;
+  }
+  .offertext{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;;
+    font-weight:600;
+  }
+  .offertextRed{
+    color:rgb(205, 2, 2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:600;
+  }
+  .HeaderPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #498d9552;
+    padding:2%;
+    margin: 0 20% 2% 20%;
+    border-radius: 10px;
+  }
+  .HeaderPart span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+   
+    font-weight:600;
+    color:#1f5a60;
+    
+  }
+  .normalHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .DisplayOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap:3%;
+    /* width:100%; */
+    margin: 0 20% 2% 20%;
+    padding:1%;
+    overflow:scroll; 
+  }
+  .ItemCardsPortion{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    border-radius: 8px;
+    background-color: white;
+    width:135px;
+    padding:3px;
+    box-shadow: 1px 2px 3px rgb(135, 135, 135, 0.179),
+    -1px -2px 3px rgba(135, 135, 135, 0.179);
+  }
+.ItemCardImage{
+  border-radius: 5px;
+  width:135px;
+  height:80px;
+  margin-top: 4px;
+
+}
+.itemcardname{
+  font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    color:#212222;
+    
+}
+.itemcarddesc{
+  font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* font-weight:600; */
+    color:#1f5a60;
+    
+}
+.itemcardPrice{
+  font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    color:#212222;
+}
+.ItemCardSelect{
+  display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#212222;
+}
+.ItemCardText{
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  padding-left:4%
+}
+.itemcardPriceOff{
+  font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    /* font-weight:600; */
+    color:#212222;
+    text-decoration:line-through ;
+}
+.itemcardOptions{
+  padding:2px;
+  margin-left:1%;
+  width:70%;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.ItemCardSelect select{
+  
+  font-family: 'Poppins', sans-serif;
+}
+.ItemCardSelect select option{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color:#212222;
+}
+.Instock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color:green;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.contactPortion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding:2%;
+  height:100px;
+  border-radius:6px;
+  box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+  -1px -1px 3px rgba(135, 135, 135, 0.179);
+}
+.Letter{
+  color:#59ccd9;
+  border-radius:6px;
+  padding:3% 25% 3% 25%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  background-color: #1f5a60;
+}
+.ContactName{
+  margin-top:4%;
+  color:black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  /* font-weight: 600; */
+}
+.Service{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap:3%;
+  margin-bottom:10%
+}
+.servicePortion{
+  border-radius: 8px;
+  padding:2%;
+  background-color: white;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color:#1f5a60;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+  -1px -1px 3px rgba(135, 135, 135, 0.179);
+}
 }
 
 
@@ -203,7 +459,6 @@ body {
     width: 95%;
     height: 40%;
     border-radius: 20px;
-    ;
     border: 0ps solid transparent;
     box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
       -1px -1px 3px rgba(135, 135, 135, 0.179);
@@ -275,6 +530,7 @@ body {
   .titleBlock {
     font-family: 'Poppins', sans-serif;
     color: #1f5a60;
+    padding:0px 10% 0px 10%;
     border: solid;
     border-width: 2px;
     border-color: rgb(92, 92, 92);
@@ -314,4 +570,182 @@ body {
     font-size: 16px;
     font-weight:600;
   }
+  .HeaderPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #498d9552;
+    padding:2%;
+    margin: 0 3% 2% 3%;
+    border-radius: 10px;
+  }
+  .HeaderPart span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+   
+    font-weight:600;
+    color:#1f5a60;
+    
+  }
+  .normalHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .DisplayOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap:3%;
+    /* width:100%; */
+    margin:1% 2% 1% 2%;
+    padding:1%;
+    overflow:scroll; 
+  }
+  .ItemCardsPortion{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    border-radius: 8px;
+    background-color: white;
+    width:135px;
+    padding:3px;
+    box-shadow: 1px 2px 3px rgb(135, 135, 135, 0.179),
+    -1px -2px 3px rgba(135, 135, 135, 0.179);
+  }
+.ItemCardImage{
+  border-radius: 5px;
+  width:135px;
+  height:80px;
+  margin-top: 4px;
+
+}
+.itemcardname{
+  font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    color:#212222;
+    
+}
+.itemcarddesc{
+  font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* font-weight:600; */
+    color:#1f5a60;
+    
+}
+.itemcardPrice{
+  font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    color:#212222;
+}
+.ItemCardSelect{
+  display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#212222;
+}
+.ItemCardText{
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  padding-left:4%
+}
+.itemcardPriceOff{
+  font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    /* font-weight:600; */
+    color:#212222;
+    text-decoration:line-through ;
+}
+.itemcardOptions{
+  padding:2px;
+  margin-left:1%;
+  width:70%;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.ItemCardSelect select{
+  
+  font-family: 'Poppins', sans-serif;
+}
+.ItemCardSelect select option{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color:#212222;
+}
+.Instock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color:green;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.contactPortion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding:2%;
+  height:100px;
+  border-radius:6px;
+  box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+  -1px -1px 3px rgba(135, 135, 135, 0.179);
+}
+.Letter{
+  color:#59ccd9;
+  border-radius:6px;
+  padding:3% 25% 3% 25%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  background-color: #1f5a60;
+}
+.ContactName{
+  margin-top:4%;
+  color:black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  /* font-weight: 600; */
+}
+.Service{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap:3%;
+  margin-bottom:10%
+}
+.servicePortion{
+  border-radius: 8px;
+  padding:2%;
+  background-color: white;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color:#1f5a60;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  box-shadow: 2px 1px 3px rgb(135, 135, 135, 0.179),
+  -1px -1px 3px rgba(135, 135, 135, 0.179);
+}
 }
